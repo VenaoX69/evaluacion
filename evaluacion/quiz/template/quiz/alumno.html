@@ -38,13 +38,13 @@
             </tr>
         </thead>
         <tbody>
+            {% for alum in alumnos %}
             <tr>
-                {% for alum in alumnos %}
                 <th>{{ alum.nombre }}</th>
                 <th>{{ alum.ficha }}</th>
                 <th>{{ alum.edad }}</th>
-    {% endfor %}
             </tr>
+            {% endfor %}
         </tbody>
     </table>
 
